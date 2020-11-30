@@ -20,10 +20,14 @@ namespace Transport
             //Application.Run(new Transport());
 
             Car car = new Car("Мерседес", new Models.Fuel { Name = "Бензин" }, 34, 120, 15.7, 65, 2 );
+            Tank tank = new Tank("ИС", new Models.Fuel { Name = "Дизель"}, 0, 60, 30, 400,3);
 
             car.WindowOpening();
             car.Start();
             car.DoorOpening();
+            tank.WindowOpening();
+            tank.Start();
+            tank.DoorOpening();
         }
     }
 }

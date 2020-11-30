@@ -70,8 +70,18 @@
     <Compile Include="Forms\Log.Designer.cs">
       <DependentUpon>Log.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Bike.cs" />
+    <Compile Include="Models\Bus.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Fuel.cs" />
+    <Compile Include="Models\Loader.cs" />
+    <Compile Include="Models\Motorcycle.cs" />
+    <Compile Include="Models\Scooter.cs" />
+    <Compile Include="Models\Tank.cs" />
+    <Compile Include="Models\Tram.cs" />
+    <Compile Include="Models\Trolleybus.cs" />
+    <Compile Include="Models\Truck.cs" />
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
