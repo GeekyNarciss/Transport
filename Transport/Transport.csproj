@@ -46,28 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Transport.cs">
+    <Compile Include="Presenter\FuelPresenter.cs" />
+    <Compile Include="Presenter\TransportPresenter.cs" />
+    <Compile Include="Viev\Transport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Transport.Designer.cs">
+    <Compile Include="Viev\Transport.Designer.cs">
       <DependentUpon>Transport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Fuel.cs">
+    <Compile Include="Viev\Fuel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Fuel.Designer.cs">
+    <Compile Include="Viev\Fuel.Designer.cs">
       <DependentUpon>Fuel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Vehicles.cs">
+    <Compile Include="Viev\Vehicles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Vehicles.Designer.cs">
+    <Compile Include="Viev\Vehicles.Designer.cs">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Log.cs">
+    <Compile Include="Viev\Log.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Log.Designer.cs">
+    <Compile Include="Viev\Log.Designer.cs">
       <DependentUpon>Log.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Bike.cs" />
@@ -85,16 +87,16 @@
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Log.resx">
+    <EmbeddedResource Include="Viev\Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Transport.resx">
+    <EmbeddedResource Include="Viev\Transport.resx">
       <DependentUpon>Transport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Fuel.resx">
+    <EmbeddedResource Include="Viev\Fuel.resx">
       <DependentUpon>Fuel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Vehicles.resx">
+    <EmbeddedResource Include="Viev\Vehicles.resx">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -119,5 +121,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

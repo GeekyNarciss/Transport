@@ -109,9 +109,38 @@ namespace Transport.Models
             else LogMessage("Окна отсутствуют");
         }
 
-        public void SpeedChanger()
+        public void SpeedChangerUp(int kmph)
         {
+            if (CurrentSpeed + kmph <= MaxSpeed)
+            {
+                CurrentSpeed += kmph;
+                LogMessage($"Скорость увеличена на {kmph} км/ч. Текущая скорость {CurrentSpeed} км/ч");
+            }
+            else 
+            {
+                CurrentSpeed = MaxSpeed;
+                LogMessage($"Достигнут максимум скорости, {MaxSpeed} км/ч");
+            };
+        }
 
+        public void SpeedChangerDown(int kmph)
+        {
+            if (CurrentSpeed - kmph >= 0)
+            {
+                CurrentSpeed -= kmph;
+                LogMessage($"Скорость снижена на {kmph} км/ч. Текущая скорость {CurrentSpeed} км/ч");
+            }
+            else
+            {
+                CurrentSpeed = 0;
+                LogMessage($"ТС остановлено");
+            };
+        }
+
+        public void SpeedChanger(double s, double t, double a)
+        {
+            s = (TankVolume / FuelConsumption) * 100;
+            a = (MaxSpeed - StartSpeed)*(StartSpeed + MaxSpeed) / s; //по сути это параметр-константа, по которому картинка должна ускоряться до середины пути
         }
 
         public void PassengerTaking()
@@ -143,7 +172,7 @@ namespace Transport.Models
             }
             else
             {
-                CurrentFuelLevel += TankVolume;
+                CurrentFuelLevel = TankVolume;
                 LogMessage($"Бак полон, {TankVolume} литров");
             }
         }

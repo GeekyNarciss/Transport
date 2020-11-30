@@ -25,6 +25,8 @@ namespace Transport
             car.WindowOpening();
             car.Start();
             car.DoorOpening();
+            car.CurrentSpeed = 10;
+            car.SpeedChangerUp(20);
             tank.WindowOpening();
             tank.Start();
             tank.DoorOpening();
