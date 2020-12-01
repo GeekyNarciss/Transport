@@ -1,7 +1,6 @@
 D:\Artemiy\С#\Transport\Transport\bin\Debug\Transport.exe.config
 D:\Artemiy\С#\Transport\Transport\bin\Debug\Transport.exe
 D:\Artemiy\С#\Transport\Transport\bin\Debug\Transport.pdb
-D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csprojAssemblyReference.cache
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Properties.Resources.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csproj.GenerateResource.cache
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csproj.CoreCompileInputs.cache

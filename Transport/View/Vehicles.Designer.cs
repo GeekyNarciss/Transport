@@ -70,13 +70,13 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
@@ -364,6 +364,7 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(90, 22);
             this.numericUpDown4.TabIndex = 20;
+            this.numericUpDown4.ThousandsSeparator = true;
             // 
             // numericUpDown3
             // 
@@ -521,7 +522,7 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox1.Location = new System.Drawing.Point(107, 59);
+            this.comboBox1.Location = new System.Drawing.Point(107, 60);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 24);
             this.comboBox1.TabIndex = 12;
@@ -539,7 +540,7 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox2.Location = new System.Drawing.Point(107, 123);
+            this.comboBox2.Location = new System.Drawing.Point(107, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(98, 24);
             this.comboBox2.TabIndex = 13;
@@ -557,7 +558,7 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox3.Location = new System.Drawing.Point(107, 187);
+            this.comboBox3.Location = new System.Drawing.Point(107, 188);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(98, 24);
             this.comboBox3.TabIndex = 14;
@@ -575,7 +576,7 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox4.Location = new System.Drawing.Point(107, 251);
+            this.comboBox4.Location = new System.Drawing.Point(107, 252);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(98, 24);
             this.comboBox4.TabIndex = 15;
@@ -593,7 +594,7 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox5.Location = new System.Drawing.Point(107, 315);
+            this.comboBox5.Location = new System.Drawing.Point(107, 316);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(98, 24);
             this.comboBox5.TabIndex = 16;
@@ -605,16 +606,6 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(90, 22);
             this.numericUpDown1.TabIndex = 17;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(323, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 34);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "ОК";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -667,6 +658,16 @@
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(106, 22);
             this.maskedTextBox5.TabIndex = 49;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(323, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 34);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "ОК";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Venicles
             // 

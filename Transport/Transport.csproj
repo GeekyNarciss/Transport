@@ -46,30 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AppContext.cs" />
     <Compile Include="Presenter\FuelPresenter.cs" />
     <Compile Include="Presenter\TransportPresenter.cs" />
-    <Compile Include="Viev\Transport.cs">
+    <Compile Include="View\IFuelView.cs" />
+    <Compile Include="View\Transport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Viev\Transport.Designer.cs">
+    <Compile Include="View\Transport.Designer.cs">
       <DependentUpon>Transport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Viev\Fuel.cs">
+    <Compile Include="View\Fuel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Viev\Fuel.Designer.cs">
+    <Compile Include="View\Fuel.Designer.cs">
       <DependentUpon>Fuel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Viev\Vehicles.cs">
+    <Compile Include="View\Vehicles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Viev\Vehicles.Designer.cs">
+    <Compile Include="View\Vehicles.Designer.cs">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Viev\Log.cs">
+    <Compile Include="View\Log.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Viev\Log.Designer.cs">
+    <Compile Include="View\Log.Designer.cs">
       <DependentUpon>Log.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Bike.cs" />
@@ -87,16 +89,16 @@
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Viev\Log.resx">
+    <EmbeddedResource Include="View\Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Viev\Transport.resx">
+    <EmbeddedResource Include="View\Transport.resx">
       <DependentUpon>Transport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Viev\Fuel.resx">
+    <EmbeddedResource Include="View\Fuel.resx">
       <DependentUpon>Fuel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Viev\Vehicles.resx">
+    <EmbeddedResource Include="View\Vehicles.resx">
       <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
