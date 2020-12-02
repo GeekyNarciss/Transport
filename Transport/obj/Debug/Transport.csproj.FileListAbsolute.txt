@@ -8,7 +8,6 @@ D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.exe
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.pdb
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Transport.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Fuel.resources
-D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Venicles.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Log.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csprojAssemblyReference.cache
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Vehicles.resources
