@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Transport.Presenter;
+using Transport.View;
 
 namespace Transport
 {
-    public partial class Transport : Form
+    public partial class Transport : Form, ITransportView
     {
+        private TransportPresenter _presenter;
         public Transport()
         {
             InitializeComponent();
+            _presenter = new TransportPresenter(this);
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -35,7 +39,7 @@ namespace Transport
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Venicles newform = new Venicles();
+            Vehicles newform = new Vehicles();
             newform.ShowDialog();
         }
 
@@ -54,5 +58,67 @@ namespace Transport
             Log newform = new Log();
             newform.ShowDialog();
         }
+
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateVihecle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateFuels()
+        {
+
+        }
+
+        public void ShowAllVehicles()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void createFuelButton_Click(object sender, EventArgs e)
+        {
+            _presenter.OpenFormWithCreatingFuel();
+        }
+
+        private void createVechiclesButton_Click(object sender, EventArgs e)
+        {
+            _presenter.OpenFormWithCreatingVehicles();
+        }
+
+        public List<PictureBox> GetPickureBoxWithVeclise()
+        {
+            List<PictureBox> pictureBoxes = new List<PictureBox>();
+            pictureBoxes.Add(pictureBox1);
+            //pictureBoxes.Add(pictureBox2);
+            //pictureBoxes.Add(pictureBox3);
+            //pictureBoxes.Add(pictureBox4);
+            //pictureBoxes.Add(pictureBox5);
+
+            return pictureBoxes;
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            _presenter.Start();
+        }
+
+        List<PictureBox> ITransportView.GetPickureBoxWithVeclise()
+        {
+            throw new NotImplementedException();
+        }
+
+        //public List<PictureBox> GetPickureBoxWithVeclise()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
