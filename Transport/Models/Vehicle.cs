@@ -23,14 +23,29 @@ namespace Transport.Models
         public bool Lighting { get; set; } = false; //наличие осветильных приборов(фар)
         public int LiftingCapacity { get; set; } = 100; //грузопоъемность
         public bool Trailer { get; set; } = false;//возможность подсоединения прицепа
-        public int StartSpeed { get; set; } = 0; //стартовая скорость
-        public int MaxSpeed { get; set; } = 0; //максимальная скорость
-        public int CurrentSpeed { get; set; } = 0; //текущая скорость
+        public double StartSpeed { get; set; } = 0; //стартовая скорость
+        public double MaxSpeed { get; set; } = 0; //максимальная скорость
+        public double CurrentSpeed { get; set; } = 0; //текущая скорость
         public Fuel Fuel { get; set; } //тип топлива
         public int TankVolume { get; set; } = 0;//объем бака
         public double CurrentFuelLevel { get; set; } = 0; //текущее количество топлива
         public double FuelConsumption { get; set; } = 0; //расход
         public bool CurrentState { get; set; } = false; //состояние ТС (стоит-false/в движении-true)
+        public double PassedWay { get; set; } = 0;
+        public double Acceleration { get; set; } = 0;
+        public double CurrentSpeedKmInH
+        {
+            get
+            {
+                return CurrentSpeed * 3.6;
+            }
+
+            set
+            {
+                CurrentSpeed = value / 3.6;
+            }
+        }
+        public DateTime Time { get; set; }
         private string LogFile { get; set; } = ""; //запись лога в строку
 
 
@@ -68,6 +83,7 @@ namespace Transport.Models
                     LogMessage("Движение началось");
                     CurrentSpeed = StartSpeed;
                     CurrentState = true;
+                    Acceleration = (MaxSpeed * MaxSpeed - StartSpeed * StartSpeed) / (TankVolume/ FuelConsumption * 100000.0);
                 }
                 else LogMessage("Для Вашей безопасности, закройте все двери");
             }
@@ -137,10 +153,63 @@ namespace Transport.Models
             };
         }
 
-        public void SpeedChanger(double s, double t, double a)
+        //public void SpeedChanger(double s, double t, double a)
+        //{
+        //    s = (TankVolume / FuelConsumption) * 100;
+        //    a = (MaxSpeed - StartSpeed)*(StartSpeed + MaxSpeed) / s; //по сути это параметр-константа, по которому картинка должна ускоряться до середины пути
+        //}
+
+        public void ChangeTheSpeedTo(double deltaSpeed)
         {
-            s = (TankVolume / FuelConsumption) * 100;
-            a = (MaxSpeed - StartSpeed)*(StartSpeed + MaxSpeed) / s; //по сути это параметр-константа, по которому картинка должна ускоряться до середины пути
+            if (CurrentSpeed == 0 && deltaSpeed > 0)
+            {
+                Start();
+            }
+            if (CurrentSpeed + deltaSpeed <= MaxSpeed && CurrentSpeed + deltaSpeed >= 0)
+            {
+                CurrentSpeed += deltaSpeed;
+                LogMessage($"The current speed has changed to {deltaSpeed}. Current speed is now {CurrentSpeed}");
+            }
+            else if (CurrentSpeed == MaxSpeed)
+            {
+                LogMessage("The vehicle is moving at maximum speed.");
+            }
+            else if (CurrentSpeed == 0)
+            {
+                LogMessage("The vehicle cannot slow down because it is stopped");
+            }
+            else if (CurrentSpeed + deltaSpeed > MaxSpeed)
+            {
+                CurrentSpeed = MaxSpeed;
+                LogMessage($"The current speed has changed to {MaxSpeed - CurrentSpeed}. Current speed is now {MaxSpeed}");
+            }
+            else if (CurrentSpeed - deltaSpeed < 0)
+            {
+                CurrentSpeed = 0;
+                LogMessage($"The current speed has changed to {CurrentSpeed}. Current speed is now 0");
+            }
+            else if (CurrentSpeed == MaxSpeed)
+            {
+                LogMessage("The vehicle is moving at maximum speed.");
+            }
+            else if (CurrentSpeed == 0)
+            {
+                LogMessage("The vehicle cannot slow down because it is stopped");
+            }
+        }
+
+        public void Boost(double time)
+        {
+            Time = Time.AddSeconds((int)time);
+
+            double oldSpeed = CurrentSpeed;
+            ChangeTheSpeedTo(Acceleration * time);
+
+            double deltaWay = (int)((oldSpeed * time) + (CurrentSpeed * time / 2)) / 1000.0;
+            PassedWay += deltaWay;
+            CurrentFuelLevel -= FuelConsumption / 100.0 * deltaWay;
+
+            //LogMessage($"\tCS: {CurrentSpeed};\tdeltaWay: {deltaWay}; \tPassedWay: {PassedWay}; \t FuelLavel: {CurrentFuelLevel}");
         }
 
         public void PassengerTaking()

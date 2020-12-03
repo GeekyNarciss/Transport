@@ -35,9 +35,11 @@ namespace Transport.Models
             {
                 PictureBox.Invoke((MethodInvoker)delegate
                 {
-                    PictureBox.Left += 5;
+                    //PictureBox.Left += 5;
+                    Vehicle.Boost(50.0);
+                    PictureBox.Left = 10 + (int)((Vehicle.PassedWay / 500.0) * 800.0);
                 });
-                Thread.Sleep(500);
+                Thread.Sleep(200);
             }
         }
     }
