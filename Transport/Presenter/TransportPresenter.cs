@@ -32,7 +32,7 @@ namespace Transport.Presenter
         {
             List<VehicleDisplay> vehicleInForms = new List<VehicleDisplay>();
             var vehicles = Models.AppContext.Vehicles;
-            var pictureBoxes = _view.GetPickureBoxWithVeclise();
+            var pictureBoxes = _view.GetPictureBoxWithVehicle();
             vehicleInForms.Add(new VehicleDisplay(vehicles[0], pictureBoxes[0]));
             vehicleInForms.Add(new VehicleDisplay(vehicles[1], pictureBoxes[1]));
             vehicleInForms.Add(new VehicleDisplay(vehicles[2], pictureBoxes[2]));

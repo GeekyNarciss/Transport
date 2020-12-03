@@ -32,16 +32,24 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip5 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar5 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip4 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar4 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar3 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +92,10 @@
             this.statusStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.statusStrip6.SuspendLayout();
@@ -104,7 +116,11 @@
             this.tableLayoutPanel3.Controls.Add(this.statusStrip3, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.statusStrip2, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.statusStrip1, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox4, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox5, 0, 8);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 43);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 10;
@@ -126,24 +142,32 @@
             this.statusStrip5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.statusStrip5.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar5});
-            this.statusStrip5.Location = new System.Drawing.Point(0, 465);
+            this.toolStripProgressBar5,
+            this.toolStripStatusLabel5});
+            this.statusStrip5.Location = new System.Drawing.Point(0, 463);
             this.statusStrip5.Name = "statusStrip5";
-            this.statusStrip5.Size = new System.Drawing.Size(842, 24);
+            this.statusStrip5.Size = new System.Drawing.Size(842, 26);
             this.statusStrip5.TabIndex = 6;
             this.statusStrip5.Text = "statusStrip5";
             // 
             // toolStripProgressBar5
             // 
             this.toolStripProgressBar5.Name = "toolStripProgressBar5";
-            this.toolStripProgressBar5.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar5.Size = new System.Drawing.Size(100, 18);
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(29, 20);
+            this.toolStripStatusLabel5.Text = "0%";
             // 
             // statusStrip4
             // 
             this.statusStrip4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.statusStrip4.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar4});
+            this.toolStripProgressBar4,
+            this.toolStripStatusLabel4});
             this.statusStrip4.Location = new System.Drawing.Point(0, 364);
             this.statusStrip4.Name = "statusStrip4";
             this.statusStrip4.Size = new System.Drawing.Size(842, 24);
@@ -155,12 +179,19 @@
             this.toolStripProgressBar4.Name = "toolStripProgressBar4";
             this.toolStripProgressBar4.Size = new System.Drawing.Size(100, 16);
             // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(29, 18);
+            this.toolStripStatusLabel4.Text = "0%";
+            // 
             // statusStrip3
             // 
             this.statusStrip3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.statusStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar3});
+            this.toolStripProgressBar3,
+            this.toolStripStatusLabel3});
             this.statusStrip3.Location = new System.Drawing.Point(0, 267);
             this.statusStrip3.Name = "statusStrip3";
             this.statusStrip3.Size = new System.Drawing.Size(842, 24);
@@ -171,6 +202,12 @@
             // 
             this.toolStripProgressBar3.Name = "toolStripProgressBar3";
             this.toolStripProgressBar3.Size = new System.Drawing.Size(100, 16);
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(29, 18);
+            this.toolStripStatusLabel3.Text = "0%";
             // 
             // statusStrip2
             // 
@@ -191,40 +228,86 @@
             this.toolStripProgressBar2.Name = "toolStripProgressBar2";
             this.toolStripProgressBar2.Size = new System.Drawing.Size(100, 16);
             this.toolStripProgressBar2.Tag = "";
-            this.toolStripProgressBar2.Value = 70;
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(37, 18);
-            this.toolStripStatusLabel1.Text = "80%";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(29, 18);
+            this.toolStripStatusLabel1.Text = "0%";
             // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 75);
+            this.toolStripProgressBar1,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 73);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(842, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(842, 24);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 14);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(29, 18);
+            this.toolStripStatusLabel2.Text = "0%";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 100);
+            this.pictureBox1.ErrorImage = global::Transport.Properties.Resources.Car;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ErrorImage = global::Transport.Properties.Resources.Car;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = global::Transport.Properties.Resources.Car;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 197);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(70, 67);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.ErrorImage = global::Transport.Properties.Resources.Car;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 294);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(70, 67);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.ErrorImage = global::Transport.Properties.Resources.Car;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 391);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(70, 67);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -296,8 +379,9 @@
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -629,6 +713,10 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -695,6 +783,14 @@
         private System.Windows.Forms.ToolStripMenuItem времяСМоментаСтартаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 

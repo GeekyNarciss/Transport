@@ -33,19 +33,17 @@ namespace Transport
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            Fuel newform = new Fuel();
-            newform.ShowDialog();
+            _presenter.OpenFormWithCreatingFuel();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Vehicles newform = new Vehicles();
-            newform.ShowDialog();
+            _presenter.OpenFormWithCreatingVehicles();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            _presenter.Start();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -94,31 +92,22 @@ namespace Transport
             _presenter.OpenFormWithCreatingVehicles();
         }
 
-        public List<PictureBox> GetPickureBoxWithVeclise()
+        public List<PictureBox> GetPictureBoxWithVehicle()
         {
             List<PictureBox> pictureBoxes = new List<PictureBox>();
             pictureBoxes.Add(pictureBox1);
-            //pictureBoxes.Add(pictureBox2);
-            //pictureBoxes.Add(pictureBox3);
-            //pictureBoxes.Add(pictureBox4);
-            //pictureBoxes.Add(pictureBox5);
+            pictureBoxes.Add(pictureBox2);
+            pictureBoxes.Add(pictureBox3);
+            pictureBoxes.Add(pictureBox4);
+            pictureBoxes.Add(pictureBox5);
 
             return pictureBoxes;
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _presenter.Start();
+            Log newform = new Log();
+            newform.ShowDialog();
         }
-
-        List<PictureBox> ITransportView.GetPickureBoxWithVeclise()
-        {
-            throw new NotImplementedException();
-        }
-
-        //public List<PictureBox> GetPickureBoxWithVeclise()
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

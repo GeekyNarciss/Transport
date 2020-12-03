@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
@@ -83,6 +84,7 @@
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
@@ -109,6 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -639,6 +642,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(82, 22);
             this.maskedTextBox1.TabIndex = 45;
+            this.maskedTextBox1.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox1_Validating);
             // 
             // maskedTextBox2
             // 
@@ -647,6 +651,7 @@
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(82, 22);
             this.maskedTextBox2.TabIndex = 46;
+            this.maskedTextBox2.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox2_Validating);
             // 
             // maskedTextBox3
             // 
@@ -655,6 +660,7 @@
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(82, 22);
             this.maskedTextBox3.TabIndex = 47;
+            this.maskedTextBox3.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox3_Validating);
             // 
             // maskedTextBox4
             // 
@@ -663,6 +669,7 @@
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(82, 22);
             this.maskedTextBox4.TabIndex = 48;
+            this.maskedTextBox4.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox4_Validating);
             // 
             // maskedTextBox5
             // 
@@ -671,6 +678,7 @@
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(82, 22);
             this.maskedTextBox5.TabIndex = 49;
+            this.maskedTextBox5.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox5_Validating);
             // 
             // button1
             // 
@@ -698,14 +706,6 @@
             // 
             this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Бензин",
-            "Дизель",
-            "Газ",
-            "Электричество",
-            "Лошадиная сила",
-            "Человеческая сила",
-            "Ядерное"});
             this.comboBox6.Location = new System.Drawing.Point(187, 60);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(82, 24);
@@ -715,14 +715,6 @@
             // 
             this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Бензин",
-            "Дизель",
-            "Газ",
-            "Электричество",
-            "Лошадиная сила",
-            "Человеческая сила",
-            "Ядерное"});
             this.comboBox7.Location = new System.Drawing.Point(187, 124);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(82, 24);
@@ -733,13 +725,7 @@
             this.comboBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
-            "Бензин",
-            "Дизель",
-            "Газ",
-            "Электричество",
-            "Лошадиная сила",
-            "Человеческая сила",
-            "Ядерное"});
+            ""});
             this.comboBox8.Location = new System.Drawing.Point(187, 188);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(82, 24);
@@ -749,14 +735,6 @@
             // 
             this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "Бензин",
-            "Дизель",
-            "Газ",
-            "Электричество",
-            "Лошадиная сила",
-            "Человеческая сила",
-            "Ядерное"});
             this.comboBox9.Location = new System.Drawing.Point(187, 252);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(82, 24);
@@ -766,18 +744,14 @@
             // 
             this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "Бензин",
-            "Дизель",
-            "Газ",
-            "Электричество",
-            "Лошадиная сила",
-            "Человеческая сила",
-            "Ядерное"});
             this.comboBox10.Location = new System.Drawing.Point(187, 316);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(82, 24);
             this.comboBox10.TabIndex = 55;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Vehicles
             // 
@@ -816,6 +790,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -877,5 +852,6 @@
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -14,6 +14,6 @@ namespace Transport.View
         void CreateVihecle();
         void CreateFuels();
         void ShowAllVehicles();
-        List<PictureBox> GetPickureBoxWithVeclise();
+        List<PictureBox> GetPictureBoxWithVehicle();
     }
 }

@@ -37,7 +37,7 @@ namespace Transport.Models
             {
                 PictureBox.Invoke((MethodInvoker)delegate
                 {
-                    PictureBox.Left += 5;
+                    PictureBox.Left = i*5;
                 });
                 Thread.Sleep(500);
             }

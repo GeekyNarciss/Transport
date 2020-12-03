@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Transport.View;
+using Transport.Presenter;
 
 namespace Transport
 {
     public partial class Vehicles : Form, IVehicleView
     {
+        private VehiclePresenter _presenter;
+
         public Vehicles()
         {
             InitializeComponent();
+            _presenter = new VehiclePresenter(this);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,8 +39,12 @@ namespace Transport
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
-
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                _presenter.Submit();
+                Close();
+            }
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -47,11 +55,11 @@ namespace Transport
         public List<string> GetVehicleList()
         {
             List<string> Vehicle = new List<string>();
-            Vehicle.Add(comboBox1.SelectedItem.ToString());
-            Vehicle.Add(comboBox2.SelectedItem.ToString());
-            Vehicle.Add(comboBox3.SelectedItem.ToString());
-            Vehicle.Add(comboBox4.SelectedItem.ToString());
-            Vehicle.Add(comboBox5.SelectedItem.ToString());
+            Vehicle.Add(comboBox1.Text);
+            Vehicle.Add(comboBox2.Text);
+            Vehicle.Add(comboBox3.Text);
+            Vehicle.Add(comboBox4.Text);
+            Vehicle.Add(comboBox5.Text);
 
             return Vehicle;
         }
@@ -59,11 +67,11 @@ namespace Transport
         public List<string> GetFuelList()
         {
             List<string> Fuels = new List<string>();
-            Fuels.Add(comboBox6.SelectedItem.ToString());
-            Fuels.Add(comboBox7.SelectedItem.ToString());
-            Fuels.Add(comboBox8.SelectedItem.ToString());
-            Fuels.Add(comboBox9.SelectedItem.ToString());
-            Fuels.Add(comboBox10.SelectedItem.ToString());
+            Fuels.Add(comboBox6.Text);
+            Fuels.Add(comboBox7.Text);
+            Fuels.Add(comboBox8.Text);
+            Fuels.Add(comboBox9.Text);
+            Fuels.Add(comboBox10.Text);
 
             return Fuels;
         }
@@ -140,9 +148,19 @@ namespace Transport
             return Passengers;
         }
 
-        public void SetFuel(List<Models.Fuel> fuels)
+        public void SetFuel(List<Models.Fuel> fuelsList)
         {
             List<string> NameFuels = new List<string>();
+            for (int i = 0; i < fuelsList.Count; i++)
+            {
+                NameFuels.Add(fuelsList[i].Name);
+            }
+
+            comboBox6.Items.AddRange(NameFuels.ToArray());
+            comboBox7.Items.AddRange(NameFuels.ToArray());
+            comboBox8.Items.AddRange(NameFuels.ToArray());
+            comboBox9.Items.AddRange(NameFuels.ToArray());
+            comboBox10.Items.AddRange(NameFuels.ToArray());
 
         }
 
@@ -150,5 +168,80 @@ namespace Transport
         {
             Close();
         }
-    }
+
+        private void maskedTextBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(maskedTextBox1.Text))
+            {
+                e.Cancel = true;
+                maskedTextBox1.Focus();
+                errorProvider1.SetError(maskedTextBox1, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(maskedTextBox1, "");
+            }
+        }
+
+        private void maskedTextBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(maskedTextBox2.Text))
+            {
+                e.Cancel = true;
+                maskedTextBox2.Focus();
+                errorProvider1.SetError(maskedTextBox2, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(maskedTextBox2, "");
+            }
+        }
+
+        private void maskedTextBox3_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(maskedTextBox3.Text))
+            {
+                e.Cancel = true;
+                maskedTextBox3.Focus();
+                errorProvider1.SetError(maskedTextBox3, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(maskedTextBox3, "");
+            }
+        }
+
+        private void maskedTextBox4_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(maskedTextBox4.Text))
+            {
+                e.Cancel = true;
+                maskedTextBox4.Focus();
+                errorProvider1.SetError(maskedTextBox4, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(maskedTextBox4, "");
+            }
+        }
+
+        private void maskedTextBox5_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(maskedTextBox5.Text))
+            {
+                e.Cancel = true;
+                maskedTextBox5.Focus();
+                errorProvider1.SetError(maskedTextBox5, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(maskedTextBox5, "");
+            }
+        }
+     }
 }
