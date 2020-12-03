@@ -20,8 +20,6 @@ namespace Transport.Models
             PictureBox = pictureBox;
 
             pictureBox.Image = (Image)Properties.Resources.Car;
-            pictureBox.BackColor = Color.Transparent;
-            pictureBox.Visible = true;
         }
 
         public void Launch()
@@ -37,7 +35,7 @@ namespace Transport.Models
             {
                 PictureBox.Invoke((MethodInvoker)delegate
                 {
-                    PictureBox.Left = i*5;
+                    PictureBox.Left += 5;
                 });
                 Thread.Sleep(500);
             }
