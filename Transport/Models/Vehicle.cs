@@ -214,7 +214,7 @@ namespace Transport.Models
                 LogMessage($"\tТекущая скорость: {CurrentSpeed};\tПройденный путь: {PassedWay}; \t Уровень топлива: {CurrentFuelLevel}");
             }
 
-            LogMessage($"Уровень топлива: {CurrentFuelLevel}");
+            //LogMessage($"Уровень топлива: {CurrentFuelLevel}");
 
             PassedWay += deltaWay;
             CurrentFuelLevel -= FuelConsumption / 100.0 * deltaWay;

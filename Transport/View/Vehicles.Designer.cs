@@ -225,6 +225,11 @@
             // 
             this.numericUpDown23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown23.Location = new System.Drawing.Point(451, 317);
+            this.numericUpDown23.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown23.TabIndex = 39;
@@ -265,6 +270,11 @@
             // 
             this.numericUpDown18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown18.Location = new System.Drawing.Point(451, 253);
+            this.numericUpDown18.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown18.TabIndex = 34;
@@ -305,6 +315,11 @@
             // 
             this.numericUpDown13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown13.Location = new System.Drawing.Point(451, 189);
+            this.numericUpDown13.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown13.TabIndex = 29;
@@ -345,6 +360,11 @@
             // 
             this.numericUpDown8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown8.Location = new System.Drawing.Point(451, 125);
+            this.numericUpDown8.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown8.TabIndex = 24;
@@ -386,6 +406,11 @@
             // 
             this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown3.Location = new System.Drawing.Point(451, 61);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown3.TabIndex = 19;
@@ -538,10 +563,11 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox1.Location = new System.Drawing.Point(91, 60);
+            this.comboBox1.Location = new System.Drawing.Point(91, 59);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(90, 24);
             this.comboBox1.TabIndex = 12;
+            this.comboBox1.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox1_Validating);
             // 
             // comboBox2
             // 
@@ -556,10 +582,11 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox2.Location = new System.Drawing.Point(91, 124);
+            this.comboBox2.Location = new System.Drawing.Point(91, 123);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(90, 24);
             this.comboBox2.TabIndex = 13;
+            this.comboBox2.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox2_Validating);
             // 
             // comboBox3
             // 
@@ -574,10 +601,11 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox3.Location = new System.Drawing.Point(91, 188);
+            this.comboBox3.Location = new System.Drawing.Point(91, 187);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(90, 24);
             this.comboBox3.TabIndex = 14;
+            this.comboBox3.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox3_Validating);
             // 
             // comboBox4
             // 
@@ -592,10 +620,11 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox4.Location = new System.Drawing.Point(91, 252);
+            this.comboBox4.Location = new System.Drawing.Point(91, 251);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(90, 24);
             this.comboBox4.TabIndex = 15;
+            this.comboBox4.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox4_Validating);
             // 
             // comboBox5
             // 
@@ -610,10 +639,11 @@
             "Велосипед",
             "Повозка",
             "Танк"});
-            this.comboBox5.Location = new System.Drawing.Point(91, 316);
+            this.comboBox5.Location = new System.Drawing.Point(91, 315);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(90, 24);
             this.comboBox5.TabIndex = 16;
+            this.comboBox5.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox5_Validating);
             // 
             // numericUpDown1
             // 
@@ -706,19 +736,21 @@
             // 
             this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(187, 60);
+            this.comboBox6.Location = new System.Drawing.Point(187, 59);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(82, 24);
             this.comboBox6.TabIndex = 51;
+            this.comboBox6.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox6_Validating);
             // 
             // comboBox7
             // 
             this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(187, 124);
+            this.comboBox7.Location = new System.Drawing.Point(187, 123);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(82, 24);
             this.comboBox7.TabIndex = 52;
+            this.comboBox7.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox7_Validating);
             // 
             // comboBox8
             // 
@@ -726,28 +758,31 @@
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
             ""});
-            this.comboBox8.Location = new System.Drawing.Point(187, 188);
+            this.comboBox8.Location = new System.Drawing.Point(187, 187);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(82, 24);
             this.comboBox8.TabIndex = 53;
+            this.comboBox8.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox8_Validating);
             // 
             // comboBox9
             // 
             this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(187, 252);
+            this.comboBox9.Location = new System.Drawing.Point(187, 251);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(82, 24);
             this.comboBox9.TabIndex = 54;
+            this.comboBox9.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox9_Validating);
             // 
             // comboBox10
             // 
             this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(187, 316);
+            this.comboBox10.Location = new System.Drawing.Point(187, 315);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(82, 24);
             this.comboBox10.TabIndex = 55;
+            this.comboBox10.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox10_Validating);
             // 
             // errorProvider1
             // 

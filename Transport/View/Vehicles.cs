@@ -243,5 +243,155 @@ namespace Transport
                 errorProvider1.SetError(maskedTextBox5, "");
             }
         }
-     }
+
+        private void comboBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox1.Text))
+            {
+                e.Cancel = true;
+                comboBox1.Focus();
+                errorProvider1.SetError(comboBox1, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox1, "");
+            }
+        }
+
+        private void comboBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox2.Text))
+            {
+                e.Cancel = true;
+                comboBox2.Focus();
+                errorProvider1.SetError(comboBox2, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox2, "");
+            }
+        }
+
+        private void comboBox3_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox3.Text))
+            {
+                e.Cancel = true;
+                comboBox3.Focus();
+                errorProvider1.SetError(comboBox3, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox3, "");
+            }
+        }
+
+        private void comboBox4_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox4.Text))
+            {
+                e.Cancel = true;
+                comboBox4.Focus();
+                errorProvider1.SetError(comboBox4, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox4, "");
+            }
+        }
+
+        private void comboBox5_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox5.Text))
+            {
+                e.Cancel = true;
+                comboBox5.Focus();
+                errorProvider1.SetError(comboBox5, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox5, "");
+            }
+        }
+
+        private void comboBox6_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox6.Text))
+            {
+                e.Cancel = true;
+                comboBox6.Focus();
+                errorProvider1.SetError(comboBox6, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox6, "");
+            }
+        }
+
+        private void comboBox7_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox7.Text))
+            {
+                e.Cancel = true;
+                comboBox7.Focus();
+                errorProvider1.SetError(comboBox7, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox7, "");
+            }
+        }
+
+        private void comboBox8_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox8.Text))
+            {
+                e.Cancel = true;
+                comboBox8.Focus();
+                errorProvider1.SetError(comboBox8, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox8, "");
+            }
+        }
+
+        private void comboBox9_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox9.Text))
+            {
+                e.Cancel = true;
+                comboBox9.Focus();
+                errorProvider1.SetError(comboBox9, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox9, "");
+            }
+        }
+
+        private void comboBox10_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBox10.Text))
+            {
+                e.Cancel = true;
+                comboBox10.Focus();
+                errorProvider1.SetError(comboBox10, "Модель должна быть существующей!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(comboBox10, "");
+            }
+        }
+    }
 }

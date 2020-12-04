@@ -50,7 +50,7 @@ namespace Transport.Models
                 {
                     //PictureBox.Left += 5;
                     Vehicle.Boost(50.0);
-                    PictureBox.Left = 10 + (int)((Vehicle.PassedWay / 500.0) * 800.0);
+                    PictureBox.Left = 10 + (int)((Vehicle.PassedWay / 500.0) * 450.0);
                     ProgressBar.Value = (int)Vehicle.CurrentFuelLevel;
                 });
                 Thread.Sleep(200);
