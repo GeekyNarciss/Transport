@@ -16,6 +16,10 @@ namespace Transport.Presenter
         {
             _view = view;
             _view.SetLogs(AppContext.Vehicles[0].LogString);
+            _view.SetLogs(AppContext.Vehicles[1].LogString);
+            _view.SetLogs(AppContext.Vehicles[2].LogString);
+            _view.SetLogs(AppContext.Vehicles[3].LogString);
+            _view.SetLogs(AppContext.Vehicles[4].LogString);
         }
     }
 }

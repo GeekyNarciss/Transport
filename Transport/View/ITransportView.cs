@@ -16,5 +16,6 @@ namespace Transport.View
         void ShowAllVehicles();
         List<ToolStripProgressBar> GetProgressBArList();
         List<PictureBox> GetPictureBoxWithVehicle();
+        List<RichTextBox> GetVehiclelogs();
     }
 }

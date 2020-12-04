@@ -16,15 +16,16 @@ namespace Transport.Models
 
         private Thread launchThread;
         private ToolStripProgressBar ProgressBar { get; set; }
+        private RichTextBox RichTextBox { get; set; }
 
-        public VehicleDisplay(Vehicle vehicle, PictureBox pictureBox, ToolStripProgressBar progressBar)
+        public VehicleDisplay(Vehicle vehicle, PictureBox pictureBox, ToolStripProgressBar progressBar, RichTextBox vehicleLogs)
         {
             Vehicle = vehicle;
             PictureBox = pictureBox;
             ProgressBar = progressBar;
             ProgressBar.Maximum = Vehicle.TankVolume;
             ProgressBar.Value = (int)Vehicle.CurrentFuelLevel;
-       
+            RichTextBox = vehicleLogs;
             pictureBox.Image = (Image)Properties.Resources.Car;
         }
 
@@ -50,10 +51,11 @@ namespace Transport.Models
                 {
                     //PictureBox.Left += 5;
                     Vehicle.Boost(50.0);
-                    PictureBox.Left = 10 + (int)((Vehicle.PassedWay / 500.0) * 450.0);
+                    PictureBox.Left = 10 + (int)((Vehicle.PassedWay / 500.0) * 480.0);
                     ProgressBar.Value = (int)Vehicle.CurrentFuelLevel;
+                    RichTextBox.Text = $"{Vehicle.Brand}\n{Vehicle.CurrentSpeed}км/ч\n{Vehicle.PassedWay}км\n{Vehicle.Time.ToString("HH:mm:ss")}";
                 });
-                Thread.Sleep(200);
+                Thread.Sleep(100);
             }
         }
     }

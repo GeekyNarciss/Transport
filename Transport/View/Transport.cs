@@ -122,5 +122,17 @@ namespace Transport
             return progressBars;
 
         }
+
+        public List<RichTextBox> GetVehiclelogs()
+        {
+            List<RichTextBox> vehicleLogs = new List<RichTextBox>();
+            vehicleLogs.Add(richTextBox1);
+            vehicleLogs.Add(richTextBox2);
+            vehicleLogs.Add(richTextBox3);
+            vehicleLogs.Add(richTextBox4);
+            vehicleLogs.Add(richTextBox5);
+
+            return vehicleLogs;
+        }
     }
 }
