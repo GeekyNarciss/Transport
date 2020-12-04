@@ -47,11 +47,15 @@ namespace Transport.Models
         }
         public DateTime Time { get; set; }
         private string LogFile { get; set; } = ""; //запись лога в строку
+        public List<string> LogString { get; private set; } = new List<string>();
 
 
         protected void LogMessage(string message)
         {
-            Console.WriteLine($"{DateTime.Now.ToString()}: {Brand} - {message}");
+            //Console.WriteLine($"{DateTime.Now.ToString()}: {Brand} - {message}");
+            string logString = $"{DateTime.Now.ToString()}: {Brand}  - {message}";
+            Console.WriteLine(logString);
+            LogString.Add(logString);
         }
 
         public void DoorOpening()
@@ -168,44 +172,50 @@ namespace Transport.Models
             if (CurrentSpeed + deltaSpeed <= MaxSpeed && CurrentSpeed + deltaSpeed >= 0)
             {
                 CurrentSpeed += deltaSpeed;
-                LogMessage($"The current speed has changed to {deltaSpeed}. Current speed is now {CurrentSpeed}");
+                LogMessage($"Текущая скорость изменилась на {deltaSpeed}. Текущая скорость сейчас {CurrentSpeed}.");
             }
             else if (CurrentSpeed == MaxSpeed)
             {
-                LogMessage("The vehicle is moving at maximum speed.");
+                LogMessage("ТС движется с максимальной скоростью.");
             }
             else if (CurrentSpeed == 0)
             {
-                LogMessage("The vehicle cannot slow down because it is stopped");
+                LogMessage("ТС не может замедлиться, потому что оно уже стоит.");
             }
             else if (CurrentSpeed + deltaSpeed > MaxSpeed)
             {
                 CurrentSpeed = MaxSpeed;
-                LogMessage($"The current speed has changed to {MaxSpeed - CurrentSpeed}. Current speed is now {MaxSpeed}");
+                LogMessage($"Текущая скорость изменилась на {MaxSpeed - CurrentSpeed}. Текущая скорость сейчас {MaxSpeed}.");
             }
             else if (CurrentSpeed - deltaSpeed < 0)
             {
                 CurrentSpeed = 0;
-                LogMessage($"The current speed has changed to {CurrentSpeed}. Current speed is now 0");
+                LogMessage($"Текущая скорость изменилась на {CurrentSpeed}. Текущая скорость сейчас 0.");
             }
             else if (CurrentSpeed == MaxSpeed)
             {
-                LogMessage("The vehicle is moving at maximum speed.");
+                LogMessage("ТС движется с максимальной скоростью.");
             }
             else if (CurrentSpeed == 0)
             {
-                LogMessage("The vehicle cannot slow down because it is stopped");
+                LogMessage("ТС не может замедлиться, потому что оно уже стоит.");
             }
         }
 
         public void Boost(double time)
         {
             Time = Time.AddSeconds((int)time);
-
             double oldSpeed = CurrentSpeed;
             ChangeTheSpeedTo(Acceleration * time);
-
             double deltaWay = (int)((oldSpeed * time) + (CurrentSpeed * time / 2)) / 1000.0;
+
+            if (Math.Floor(PassedWay / 50.0) < Math.Floor((PassedWay + deltaWay) / 50.0))
+            {
+                LogMessage($"\tТекущая скорость: {CurrentSpeed};\tПройденный путь: {PassedWay}; \t Уровень топлива: {CurrentFuelLevel}");
+            }
+
+            LogMessage($"Уровень топлива: {CurrentFuelLevel}");
+
             PassedWay += deltaWay;
             CurrentFuelLevel -= FuelConsumption / 100.0 * deltaWay;
 

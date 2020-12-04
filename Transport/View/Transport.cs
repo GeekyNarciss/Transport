@@ -48,7 +48,7 @@ namespace Transport
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            _presenter.Stop();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -108,6 +108,19 @@ namespace Transport
         {
             Log newform = new Log();
             newform.ShowDialog();
+        }
+
+        public List<ToolStripProgressBar> GetProgressBArList()
+        {
+            List<ToolStripProgressBar> progressBars = new List<ToolStripProgressBar>();
+            progressBars.Add(toolStripProgressBar1);
+            progressBars.Add(toolStripProgressBar2);
+            progressBars.Add(toolStripProgressBar3);
+            progressBars.Add(toolStripProgressBar4);
+            progressBars.Add(toolStripProgressBar5);
+
+            return progressBars;
+
         }
     }
 }
