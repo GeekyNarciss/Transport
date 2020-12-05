@@ -32,7 +32,7 @@ namespace Transport.Models
         public void Launch()
         {
             launchThread = new Thread(new ThreadStart(LaunchThread));
-            launchThread.Start(); 
+            launchThread.Start(); // запускаем поток
         }
 
         public void Stop()

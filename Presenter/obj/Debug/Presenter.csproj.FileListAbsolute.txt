@@ -1,0 +1,2 @@
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csprojAssemblyReference.cache
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
