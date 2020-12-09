@@ -74,13 +74,37 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bike.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Bus.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motorcycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trolleybus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

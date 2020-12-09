@@ -61,9 +61,49 @@ namespace Models
 
         private Image GetImage()
         {
+            if (Vehicle.Type == "Автомобиль")
+            {
+                return (Image)Properties.Resources.Car;
+            }
+            if (Vehicle.Type == "Грузовик")
+            {
+                return (Image)Properties.Resources.Truck;
+            }
+            if (Vehicle.Type == "Погрузчик")
+            {
+                return (Image)Properties.Resources.Loader;
+            }
+            if (Vehicle.Type == "Автобус")
+            {
+                return (Image)Properties.Resources.Bus;
+            }
+            if (Vehicle.Type == "Троллейбус")
+            {
+                return (Image)Properties.Resources.Trolleybus;
+            }
+            if (Vehicle.Type == "Трамвай")
+            {
+                return (Image)Properties.Resources.Tram;
+            }
+            if (Vehicle.Type == "Мотоцикл")
+            {
+                return (Image)Properties.Resources.Motorcycle;
+            }
+            if (Vehicle.Type == "Гужевая повозка")
+            {
+                return (Image)Properties.Resources.Cart;
+            }
             if (Vehicle.Type == "Велосипед")
             {
                 return (Image)Properties.Resources.Bike;
+            }
+            if (Vehicle.Type == "Самокат")
+            {
+                return (Image)Properties.Resources.Scooter;
+            }
+            if (Vehicle.Type == "Танк")
+            {
+                return (Image)Properties.Resources.Tank;
             }
             return (Image)Properties.Resources.Bus;
         }
