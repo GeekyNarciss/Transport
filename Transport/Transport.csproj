@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AppContext.cs" />
+    <Compile Include="Models\ChoiseOfVehicle.cs" />
     <Compile Include="Models\VehicleDisplay.cs" />
     <Compile Include="Presenter\FuelPresenter.cs" />
     <Compile Include="Presenter\LogPresenter.cs" />

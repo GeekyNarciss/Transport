@@ -23,7 +23,8 @@ namespace Transport.Presenter
 
             for (int i = 0; i < 5; i++)
             {
-                Models.AppContext.Vehicles.Add(new Car(
+                Models.AppContext.Vehicles.Add(ChoiseOfVehicle.CreateVehicle(
+                    _view.GetVehicleType()[i],
                     _view.GetBrandList()[i],
                     Models.AppContext.Fuels.Where(f => f.Name == _view.GetFuelList()[i]).FirstOrDefault(),
                     _view.GetStartSpeedList()[i],
