@@ -3,30 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Transport.Models;
-using Transport.View;
-using AppContext = Transport.Models.AppContext;
+using Models;
+using View;
+using AppContext = Models.AppContext;
 
-namespace Transport.Presenter
+namespace Presenter
 {
-    class TransportPresenter
+    public class TransportPresenter
     {
         private ITransportView _view;
         public TransportPresenter(ITransportView view)
         {
             _view = view;
-        }
-        public void OpenFormWithCreatingFuel()
-        {
-            Fuel fuel = new Fuel();
-            fuel.ShowDialog();
-        }
-
-        public void OpenFormWithCreatingVehicles()
-        {
-            Vehicles vehicle = new Vehicles();
-            vehicle.FormClosed += ShowVehicles;
-            vehicle.ShowDialog();
         }
 
         public void ShowVehicles(object sender, EventArgs e)
@@ -52,7 +40,7 @@ namespace Transport.Presenter
             Models.AppContext.VehicleDisplay.ForEach(v => v.Launch());
         }
 
-        internal void Stop()
+        public void Stop()
         {
             AppContext.VehicleDisplay.ForEach(v => v.Stop());
         }

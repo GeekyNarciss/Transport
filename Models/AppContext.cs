@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Transport.Models
+namespace Models
 {
-    class AppContext
+    public class AppContext
     {
         public static List<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
         public static List<Fuel> Fuels { get; set; } = new List<Fuel>();

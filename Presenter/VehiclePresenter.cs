@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Transport.Models;
-using Transport.View;
+using Models;
+using View;
 
-namespace Transport.Presenter
+namespace Presenter
 {
-    class VehiclePresenter
+    public class VehiclePresenter
     {
         private IVehicleView _view;
         public VehiclePresenter(IVehicleView view)
         {
             _view = view;
-            _view.SetFuel(Models.AppContext.Fuels);
+            List<string> fuels = new List<string>();
+            for (int i = 0; i < Models.AppContext.Fuels.Count; i++)
+            {
+                fuels.Add(Models.AppContext.Fuels[i].Name);
+            }
+
+            _view.SetFuel(fuels);
         }
 
         public void Submit()
@@ -23,7 +29,8 @@ namespace Transport.Presenter
 
             for (int i = 0; i < 5; i++)
             {
-                Models.AppContext.Vehicles.Add(new Car(
+                Models.AppContext.Vehicles.Add(ChoiseOfVehicle.CreateVehicle(
+                    _view.GetVehicleList()[i],
                     _view.GetBrandList()[i],
                     Models.AppContext.Fuels.Where(f => f.Name == _view.GetFuelList()[i]).FirstOrDefault(),
                     _view.GetStartSpeedList()[i],

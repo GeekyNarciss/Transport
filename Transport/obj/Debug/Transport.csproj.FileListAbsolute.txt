@@ -11,3 +11,10 @@ D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Fuel.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Log.resources
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csprojAssemblyReference.cache
 D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.Vehicles.resources
+D:\Artemiy\С#\Transport\Transport\bin\Debug\Presenter.dll
+D:\Artemiy\С#\Transport\Transport\bin\Debug\View.dll
+D:\Artemiy\С#\Transport\Transport\bin\Debug\Models.dll
+D:\Artemiy\С#\Transport\Transport\bin\Debug\Presenter.pdb
+D:\Artemiy\С#\Transport\Transport\bin\Debug\View.pdb
+D:\Artemiy\С#\Transport\Transport\bin\Debug\Models.pdb
+D:\Artemiy\С#\Transport\Transport\obj\Debug\Transport.csproj.CopyComplete

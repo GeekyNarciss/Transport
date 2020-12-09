@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Transport.Models;
-using Transport.View;
+using Models;
+using View;
 
-namespace Transport.Presenter
+namespace Presenter
 {
-    class FuelPresenter
+    public class FuelPresenter
     {
         private IFuelView _view;
 

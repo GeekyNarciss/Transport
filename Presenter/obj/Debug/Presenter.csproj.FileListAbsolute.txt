@@ -1,2 +1,11 @@
-D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csprojAssemblyReference.cache
 D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csprojAssemblyReference.cache
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\Presenter.dll
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\Presenter.pdb
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\Models.dll
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\View.dll
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\Models.pdb
+D:\Artemiy\С#\Transport\Presenter\bin\Debug\View.pdb
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.csproj.CopyComplete
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.dll
+D:\Artemiy\С#\Transport\Presenter\obj\Debug\Presenter.pdb

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6849E5DF-5710-4A73-844C-25D0671A0A4B}</ProjectGuid>
+    <ProjectGuid>{E508423D-B6E8-4CF1-A83E-F0F413781B96}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Presenter</RootNamespace>
@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,13 +49,13 @@
     <Compile Include="VehiclePresenter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Models\Models.csproj">
-      <Project>{dcc6b29f-9d07-4148-b994-02b9a32a7fcc}</Project>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{137c73e1-f4b7-4f7a-b57c-bee935bfca5a}</Project>
       <Name>Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Transport\Transport.csproj">
-      <Project>{248e47ec-3e1c-48bd-b0ef-5f7610ab9a27}</Project>
-      <Name>Transport</Name>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{7146a968-13e7-42f5-9de6-a5c59d56cac4}</Project>
+      <Name>View</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

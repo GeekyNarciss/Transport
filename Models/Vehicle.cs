@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Transport.Models
+namespace Models
 {
-    class Vehicle
+    public class Vehicle
     {
         public string Brand { get; set; } = ""; //марка
         public string Type { get; set; } = ""; //тип ТС

@@ -7,9 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Transport.Models
+namespace Models
 {
-    class VehicleDisplay
+    public class VehicleDisplay
     {
         public Vehicle Vehicle { get; set; }
         public PictureBox PictureBox { get; set; }
@@ -26,13 +26,13 @@ namespace Transport.Models
             ProgressBar.Maximum = Vehicle.TankVolume;
             ProgressBar.Value = (int)Vehicle.CurrentFuelLevel;
             RichTextBox = vehicleLogs;
-            pictureBox.Image = (Image)Properties.Resources.Car;
+            pictureBox.Image = GetImage();
         }
 
         public void Launch()
         {
             launchThread = new Thread(new ThreadStart(LaunchThread));
-            launchThread.Start(); // запускаем поток
+            launchThread.Start(); 
         }
 
         public void Stop()
@@ -57,6 +57,15 @@ namespace Transport.Models
                 });
                 Thread.Sleep(100);
             }
+        }
+
+        private Image GetImage()
+        {
+            if (Vehicle.Type == "Велосипед")
+            {
+                return (Image)Properties.Resources.Bike;
+            }
+            return (Image)Properties.Resources.Bus;
         }
     }
 }

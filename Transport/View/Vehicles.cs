@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Transport.View;
-using Transport.Presenter;
+using View;
+using Presenter;
 
 namespace Transport
 {
@@ -146,22 +146,6 @@ namespace Transport
             Passengers.Add((int)numericUpDown26.Value);
 
             return Passengers;
-        }
-
-        public void SetFuel(List<Models.Fuel> fuelsList)
-        {
-            List<string> NameFuels = new List<string>();
-            for (int i = 0; i < fuelsList.Count; i++)
-            {
-                NameFuels.Add(fuelsList[i].Name);
-            }
-
-            comboBox6.Items.AddRange(NameFuels.ToArray());
-            comboBox7.Items.AddRange(NameFuels.ToArray());
-            comboBox8.Items.AddRange(NameFuels.ToArray());
-            comboBox9.Items.AddRange(NameFuels.ToArray());
-            comboBox10.Items.AddRange(NameFuels.ToArray());
-
         }
 
         public void CloseForm()
@@ -392,6 +376,15 @@ namespace Transport
                 e.Cancel = false;
                 errorProvider1.SetError(comboBox10, "");
             }
+        }
+
+        public void SetFuel(List<string> fuels)
+        {
+            comboBox6.Items.AddRange(fuels.ToArray());
+            comboBox7.Items.AddRange(fuels.ToArray());
+            comboBox8.Items.AddRange(fuels.ToArray());
+            comboBox9.Items.AddRange(fuels.ToArray());
+            comboBox10.Items.AddRange(fuels.ToArray());
         }
     }
 }

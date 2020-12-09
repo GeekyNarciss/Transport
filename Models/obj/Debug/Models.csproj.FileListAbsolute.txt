@@ -1,2 +1,7 @@
-D:\Artemiy\С#\Transport\Models\obj\Debug\Models.csprojAssemblyReference.cache
 D:\Artemiy\С#\Transport\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Artemiy\С#\Transport\Models\obj\Debug\Models.csproj.GenerateResource.cache
+D:\Artemiy\С#\Transport\Models\bin\Debug\Models.dll
+D:\Artemiy\С#\Transport\Models\bin\Debug\Models.pdb
+D:\Artemiy\С#\Transport\Models\obj\Debug\Models.Properties.Resources.resources
+D:\Artemiy\С#\Transport\Models\obj\Debug\Models.dll
+D:\Artemiy\С#\Transport\Models\obj\Debug\Models.pdb

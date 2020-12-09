@@ -46,17 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\AppContext.cs" />
-    <Compile Include="Models\ChoiseOfVehicle.cs" />
-    <Compile Include="Models\VehicleDisplay.cs" />
-    <Compile Include="Presenter\FuelPresenter.cs" />
-    <Compile Include="Presenter\LogPresenter.cs" />
-    <Compile Include="Presenter\TransportPresenter.cs" />
-    <Compile Include="Presenter\VehiclePresenter.cs" />
-    <Compile Include="View\IFuelView.cs" />
-    <Compile Include="View\ILogView.cs" />
-    <Compile Include="View\ITransportView.cs" />
-    <Compile Include="View\IVehicleView.cs" />
     <Compile Include="View\Transport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,19 +70,6 @@
     <Compile Include="View\Log.Designer.cs">
       <DependentUpon>Log.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Bike.cs" />
-    <Compile Include="Models\Bus.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\Cart.cs" />
-    <Compile Include="Models\Fuel.cs" />
-    <Compile Include="Models\Loader.cs" />
-    <Compile Include="Models\Motorcycle.cs" />
-    <Compile Include="Models\Scooter.cs" />
-    <Compile Include="Models\Tank.cs" />
-    <Compile Include="Models\Tram.cs" />
-    <Compile Include="Models\Trolleybus.cs" />
-    <Compile Include="Models\Truck.cs" />
-    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\Log.resx">
@@ -133,6 +109,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Presenter\Presenter.csproj">
+      <Project>{e508423d-b6e8-4cf1-a83e-f0f413781b96}</Project>
+      <Name>Presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{7146a968-13e7-42f5-9de6-a5c59d56cac4}</Project>
+      <Name>View</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

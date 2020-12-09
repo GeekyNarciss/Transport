@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Transport.Presenter;
-using Transport.View;
+using Presenter;
+using View;
 
 namespace Transport
 {
@@ -33,12 +33,15 @@ namespace Transport
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            _presenter.OpenFormWithCreatingFuel();
+            Fuel fuel = new Fuel();
+            fuel.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _presenter.OpenFormWithCreatingVehicles();
+            Vehicles vehicle = new Vehicles();
+            vehicle.FormClosed += _presenter.ShowVehicles;
+            vehicle.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -84,12 +87,15 @@ namespace Transport
 
         private void createFuelButton_Click(object sender, EventArgs e)
         {
-            _presenter.OpenFormWithCreatingFuel();
+            Fuel fuel = new Fuel();
+            fuel.ShowDialog();
         }
 
         private void createVechiclesButton_Click(object sender, EventArgs e)
         {
-            _presenter.OpenFormWithCreatingVehicles();
+            Vehicles vehicle = new Vehicles();
+            vehicle.FormClosed += _presenter.ShowVehicles;
+            vehicle.ShowDialog();
         }
 
         public List<PictureBox> GetPictureBoxWithVehicle()

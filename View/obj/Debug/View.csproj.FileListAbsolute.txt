@@ -1,0 +1,6 @@
+D:\Artemiy\С#\Transport\View\obj\Debug\View.csprojAssemblyReference.cache
+D:\Artemiy\С#\Transport\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\Artemiy\С#\Transport\View\bin\Debug\View.dll
+D:\Artemiy\С#\Transport\View\bin\Debug\View.pdb
+D:\Artemiy\С#\Transport\View\obj\Debug\View.dll
+D:\Artemiy\С#\Transport\View\obj\Debug\View.pdb
