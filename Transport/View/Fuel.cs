@@ -65,11 +65,6 @@ namespace Transport
                 fuels.Add(checkBoxHumanPower.Text);
             }
 
-            if (checkBoxHumanPower.Checked)
-            {
-                fuels.Add(checkBoxHumanPower.Text);
-            }
-
             if (checkBoxJet.Checked)
             { 
                 fuels.Add(checkBoxJet.Text);
@@ -100,7 +95,7 @@ namespace Transport
                 checkBoxGas.Checked = true;
             }
 
-            if (fuelNames.IndexOf("Electricity") != -1)
+            if (fuelNames.IndexOf("Электричество") != -1)
             {
                 checkBoxElectricity.Checked = true;
             }

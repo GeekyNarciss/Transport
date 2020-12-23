@@ -21,43 +21,38 @@ namespace Transport
             _presenter = new TransportPresenter(this);
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
+        private void fuel_button_Click(object sender, EventArgs e)
         {
             Fuel fuel = new Fuel();
             fuel.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void vehicle_button_Click(object sender, EventArgs e)
         {
             Vehicles vehicle = new Vehicles();
             vehicle.FormClosed += _presenter.ShowVehicles;
             vehicle.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void start_button_Click(object sender, EventArgs e)
         {
             _presenter.Start();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void stop_button_Click(object sender, EventArgs e)
         {
             _presenter.Stop();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void log_button_Click(object sender, EventArgs e)
         {
             Log newform = new Log();
-            newform.ShowDialog();
+           
+            if (checkBox1.Checked == true)
+            {
+                newform.ShowDialog();
+            }
+            _presenter.Log();
         }
 
         public void Start()
@@ -139,6 +134,16 @@ namespace Transport
             vehicleLogs.Add(richTextBox5);
 
             return vehicleLogs;
+        }
+
+        public bool TxtChecked()
+        {
+            return checkBox2.Checked;
+        }
+
+        public bool DocChecked()
+        {
+            return checkBox3.Checked;
         }
     }
 }

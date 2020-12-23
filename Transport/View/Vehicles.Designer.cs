@@ -212,6 +212,11 @@
             this.numericUpDown25.Name = "numericUpDown25";
             this.numericUpDown25.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown25.TabIndex = 41;
+            this.numericUpDown25.Value = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             // 
             // numericUpDown24
             // 
@@ -220,6 +225,11 @@
             this.numericUpDown24.Name = "numericUpDown24";
             this.numericUpDown24.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown24.TabIndex = 40;
+            this.numericUpDown24.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // numericUpDown23
             // 
@@ -233,6 +243,11 @@
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown23.TabIndex = 39;
+            this.numericUpDown23.Value = new decimal(new int[] {
+            35,
+            0,
+            0,
+            0});
             // 
             // numericUpDown22
             // 
@@ -249,6 +264,11 @@
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(86, 22);
             this.numericUpDown21.TabIndex = 37;
+            this.numericUpDown21.Value = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
             // 
             // numericUpDown20
             // 
@@ -257,6 +277,11 @@
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown20.TabIndex = 36;
+            this.numericUpDown20.Value = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
             // 
             // numericUpDown19
             // 
@@ -265,6 +290,11 @@
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown19.TabIndex = 35;
+            this.numericUpDown19.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // numericUpDown18
             // 
@@ -278,6 +308,11 @@
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown18.TabIndex = 34;
+            this.numericUpDown18.Value = new decimal(new int[] {
+            65,
+            0,
+            0,
+            0});
             // 
             // numericUpDown17
             // 
@@ -294,6 +329,11 @@
             this.numericUpDown16.Name = "numericUpDown16";
             this.numericUpDown16.Size = new System.Drawing.Size(86, 22);
             this.numericUpDown16.TabIndex = 32;
+            this.numericUpDown16.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown15
             // 
@@ -302,6 +342,11 @@
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown15.TabIndex = 31;
+            this.numericUpDown15.Value = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
             // 
             // numericUpDown14
             // 
@@ -310,6 +355,11 @@
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown14.TabIndex = 30;
+            this.numericUpDown14.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // numericUpDown13
             // 
@@ -323,6 +373,11 @@
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown13.TabIndex = 29;
+            this.numericUpDown13.Value = new decimal(new int[] {
+            140,
+            0,
+            0,
+            0});
             // 
             // numericUpDown12
             // 
@@ -339,6 +394,11 @@
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(86, 22);
             this.numericUpDown11.TabIndex = 27;
+            this.numericUpDown11.Value = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
             // 
             // numericUpDown10
             // 
@@ -347,6 +407,11 @@
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown10.TabIndex = 26;
+            this.numericUpDown10.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             // 
             // numericUpDown9
             // 
@@ -355,6 +420,11 @@
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown9.TabIndex = 25;
+            this.numericUpDown9.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
             // numericUpDown8
             // 
@@ -368,6 +438,11 @@
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown8.TabIndex = 24;
+            this.numericUpDown8.Value = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
             // 
             // numericUpDown7
             // 
@@ -384,6 +459,11 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(86, 22);
             this.numericUpDown6.TabIndex = 22;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // numericUpDown5
             // 
@@ -392,6 +472,11 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown5.TabIndex = 21;
+            this.numericUpDown5.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
             // numericUpDown4
             // 
@@ -401,6 +486,11 @@
             this.numericUpDown4.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown4.TabIndex = 20;
             this.numericUpDown4.ThousandsSeparator = true;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // numericUpDown3
             // 
@@ -414,6 +504,11 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(82, 22);
             this.numericUpDown3.TabIndex = 19;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            190,
+            0,
+            0,
+            0});
             // 
             // label4
             // 
@@ -556,14 +651,15 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Автомобиль",
-            "Троллейбус",
-            "Трамвай",
+            "Грузовик",
             "Автобус",
             "Мотоцикл",
             "Велосипед",
+            "Самокат",
             "Повозка",
+            "Погрузчик",
             "Танк"});
-            this.comboBox1.Location = new System.Drawing.Point(91, 60);
+            this.comboBox1.Location = new System.Drawing.Point(91, 59);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(90, 24);
             this.comboBox1.TabIndex = 12;
@@ -574,15 +670,8 @@
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Автомобиль",
-            "Троллейбус",
-            "Трамвай",
-            "Автобус",
-            "Мотоцикл",
-            "Велосипед",
-            "Повозка",
-            "Танк"});
-            this.comboBox2.Location = new System.Drawing.Point(91, 124);
+            "Трамвай"});
+            this.comboBox2.Location = new System.Drawing.Point(91, 123);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(90, 24);
             this.comboBox2.TabIndex = 13;
@@ -594,14 +683,11 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Автомобиль",
-            "Троллейбус",
-            "Трамвай",
+            "Грузовик",
             "Автобус",
             "Мотоцикл",
-            "Велосипед",
-            "Повозка",
-            "Танк"});
-            this.comboBox3.Location = new System.Drawing.Point(91, 188);
+            "Погрузчик"});
+            this.comboBox3.Location = new System.Drawing.Point(91, 187);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(90, 24);
             this.comboBox3.TabIndex = 14;
@@ -613,14 +699,12 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Автомобиль",
+            "Грузовик",
             "Троллейбус",
-            "Трамвай",
             "Автобус",
             "Мотоцикл",
-            "Велосипед",
-            "Повозка",
-            "Танк"});
-            this.comboBox4.Location = new System.Drawing.Point(91, 252);
+            "Погрузчик"});
+            this.comboBox4.Location = new System.Drawing.Point(91, 251);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(90, 24);
             this.comboBox4.TabIndex = 15;
@@ -632,14 +716,16 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Автомобиль",
+            "Грузовик",
             "Троллейбус",
-            "Трамвай",
             "Автобус",
             "Мотоцикл",
             "Велосипед",
+            "Самокат",
             "Повозка",
+            "Погрузчик",
             "Танк"});
-            this.comboBox5.Location = new System.Drawing.Point(91, 316);
+            this.comboBox5.Location = new System.Drawing.Point(91, 315);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(90, 24);
             this.comboBox5.TabIndex = 16;
@@ -736,7 +822,7 @@
             // 
             this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(187, 60);
+            this.comboBox6.Location = new System.Drawing.Point(187, 59);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(82, 24);
             this.comboBox6.TabIndex = 51;
@@ -746,7 +832,7 @@
             // 
             this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(187, 124);
+            this.comboBox7.Location = new System.Drawing.Point(187, 123);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(82, 24);
             this.comboBox7.TabIndex = 52;
@@ -756,7 +842,7 @@
             // 
             this.comboBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(187, 188);
+            this.comboBox8.Location = new System.Drawing.Point(187, 187);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(82, 24);
             this.comboBox8.TabIndex = 53;
@@ -766,7 +852,7 @@
             // 
             this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(187, 252);
+            this.comboBox9.Location = new System.Drawing.Point(187, 251);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(82, 24);
             this.comboBox9.TabIndex = 54;
@@ -776,7 +862,7 @@
             // 
             this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(187, 316);
+            this.comboBox10.Location = new System.Drawing.Point(187, 315);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(82, 24);
             this.comboBox10.TabIndex = 55;

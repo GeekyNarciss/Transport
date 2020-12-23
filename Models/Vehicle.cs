@@ -218,7 +218,10 @@ namespace Models
 
             PassedWay += deltaWay;
             CurrentFuelLevel -= FuelConsumption / 100.0 * deltaWay;
-
+            if (CurrentFuelLevel < 0)
+            {
+                CurrentFuelLevel = 0;
+            }
             //LogMessage($"\tCS: {CurrentSpeed};\tdeltaWay: {deltaWay}; \tPassedWay: {PassedWay}; \t FuelLavel: {CurrentFuelLevel}");
         }
 

@@ -41,14 +41,19 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,20 +81,15 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.log_button = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.stop_button = new System.Windows.Forms.Button();
+            this.start_button = new System.Windows.Forms.Button();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.vehicle_button = new System.Windows.Forms.Button();
+            this.fuel_button = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.statusStrip5.SuspendLayout();
             this.statusStrip4.SuspendLayout();
@@ -244,6 +244,14 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(736, -3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(100, 70);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(6, 11);
@@ -262,6 +270,14 @@
             this.groupBox2.Size = new System.Drawing.Size(836, 67);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(736, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(100, 70);
+            this.richTextBox2.TabIndex = 2;
+            this.richTextBox2.Text = "";
             // 
             // pictureBox2
             // 
@@ -282,6 +298,14 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(736, 0);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(100, 70);
+            this.richTextBox3.TabIndex = 3;
+            this.richTextBox3.Text = "";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(6, 11);
@@ -301,6 +325,14 @@
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(736, 0);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(100, 70);
+            this.richTextBox4.TabIndex = 4;
+            this.richTextBox4.Text = "";
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Location = new System.Drawing.Point(6, 11);
@@ -319,6 +351,14 @@
             this.groupBox5.Size = new System.Drawing.Size(836, 67);
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(739, 0);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.Size = new System.Drawing.Size(100, 70);
+            this.richTextBox5.TabIndex = 5;
+            this.richTextBox5.Text = "";
             // 
             // pictureBox5
             // 
@@ -354,7 +394,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(59, 36);
             this.toolStripMenuItem1.Text = "Файл";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // создатьToolStripMenuItem
             // 
@@ -529,7 +568,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(277, 489);
             this.tableLayoutPanel2.TabIndex = 0;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // tableLayoutPanel9
             // 
@@ -537,7 +575,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel5, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.button5, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.log_button, 0, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 294);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 2;
@@ -582,9 +620,9 @@
             this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2.Location = new System.Drawing.Point(91, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(56, 21);
+            this.checkBox2.Size = new System.Drawing.Size(49, 21);
             this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Exel";
+            this.checkBox2.Text = "Txt";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -598,24 +636,24 @@
             this.checkBox3.Text = "Word";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // log_button
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(3, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(265, 39);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Вывести лог";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.log_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.log_button.Location = new System.Drawing.Point(3, 3);
+            this.log_button.Name = "log_button";
+            this.log_button.Size = new System.Drawing.Size(265, 39);
+            this.log_button.TabIndex = 1;
+            this.log_button.Text = "Вывести лог";
+            this.log_button.UseVisualStyleBackColor = true;
+            this.log_button.Click += new System.EventHandler(this.log_button_Click);
             // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Controls.Add(this.button4, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.button3, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.stop_button, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.start_button, 0, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 197);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
@@ -624,35 +662,35 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(271, 91);
             this.tableLayoutPanel8.TabIndex = 7;
             // 
-            // button4
+            // stop_button
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(3, 48);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(265, 40);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Стоп";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.stop_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stop_button.Location = new System.Drawing.Point(3, 48);
+            this.stop_button.Name = "stop_button";
+            this.stop_button.Size = new System.Drawing.Size(265, 40);
+            this.stop_button.TabIndex = 0;
+            this.stop_button.Text = "Стоп";
+            this.stop_button.UseVisualStyleBackColor = true;
+            this.stop_button.Click += new System.EventHandler(this.stop_button_Click);
             // 
-            // button3
+            // start_button
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(265, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Старт";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.start_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start_button.Location = new System.Drawing.Point(3, 3);
+            this.start_button.Name = "start_button";
+            this.start_button.Size = new System.Drawing.Size(265, 39);
+            this.start_button.TabIndex = 0;
+            this.start_button.Text = "Старт";
+            this.start_button.UseVisualStyleBackColor = true;
+            this.start_button.Click += new System.EventHandler(this.start_button_Click);
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Controls.Add(this.button2, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.vehicle_button, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.fuel_button, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 100);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -661,27 +699,27 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(271, 91);
             this.tableLayoutPanel7.TabIndex = 6;
             // 
-            // button2
+            // vehicle_button
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(3, 48);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(265, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Создать 5 ТС";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.vehicle_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.vehicle_button.Location = new System.Drawing.Point(3, 48);
+            this.vehicle_button.Name = "vehicle_button";
+            this.vehicle_button.Size = new System.Drawing.Size(265, 40);
+            this.vehicle_button.TabIndex = 0;
+            this.vehicle_button.Text = "Создать 5 ТС";
+            this.vehicle_button.UseVisualStyleBackColor = true;
+            this.vehicle_button.Click += new System.EventHandler(this.vehicle_button_Click);
             // 
-            // button1
+            // fuel_button
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Создать топливо";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            this.fuel_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fuel_button.Location = new System.Drawing.Point(3, 3);
+            this.fuel_button.Name = "fuel_button";
+            this.fuel_button.Size = new System.Drawing.Size(265, 39);
+            this.fuel_button.TabIndex = 0;
+            this.fuel_button.Text = "Создать топливо";
+            this.fuel_button.UseVisualStyleBackColor = true;
+            this.fuel_button.Click += new System.EventHandler(this.fuel_button_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -708,46 +746,6 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(271, 91);
             this.tableLayoutPanel6.TabIndex = 5;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(736, -3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(100, 70);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(736, 0);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(100, 70);
-            this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(736, 0);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(100, 70);
-            this.richTextBox3.TabIndex = 3;
-            this.richTextBox3.Text = "";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(736, 0);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(100, 70);
-            this.richTextBox4.TabIndex = 4;
-            this.richTextBox4.Text = "";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Location = new System.Drawing.Point(739, 0);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(100, 70);
-            this.richTextBox5.TabIndex = 5;
-            this.richTextBox5.Text = "";
             // 
             // Transport
             // 
@@ -823,19 +821,19 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button stop_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button start_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button vehicle_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button log_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button fuel_button;
         private System.Windows.Forms.StatusStrip statusStrip6;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem времяПростояToolStripMenuItem;

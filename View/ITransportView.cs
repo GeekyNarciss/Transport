@@ -14,6 +14,8 @@ namespace View
         void CreateVihecle();
         void CreateFuels();
         void ShowAllVehicles();
+        bool TxtChecked();
+        bool DocChecked();
         List<ToolStripProgressBar> GetProgressBArList();
         List<PictureBox> GetPictureBoxWithVehicle();
         List<RichTextBox> GetVehiclelogs();

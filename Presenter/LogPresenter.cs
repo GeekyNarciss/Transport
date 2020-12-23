@@ -15,7 +15,18 @@ namespace Presenter
         public LogPresenter(ILogView view)
         {
             _view = view;
-            _view.SetLogs(AppContext.Vehicles[0].LogString);
+            List<string> logs = new List<string>();
+            logs.Add("------ТС1----------------------------------------------------------------------------");
+            logs.AddRange(AppContext.Vehicles[0].LogString);
+            logs.Add("------ТС2----------------------------------------------------------------------------");
+            logs.AddRange(AppContext.Vehicles[1].LogString);
+            logs.Add("------ТС3----------------------------------------------------------------------------");
+            logs.AddRange(AppContext.Vehicles[2].LogString);
+            logs.Add("------ТС4----------------------------------------------------------------------------");
+            logs.AddRange(AppContext.Vehicles[3].LogString);
+            logs.Add("------ТС5----------------------------------------------------------------------------");
+            logs.AddRange(AppContext.Vehicles[4].LogString);
+            _view.SetLogs(logs) ;
             //_view.SetLogs(AppContext.Vehicles[1].LogString);
             //_view.SetLogs(AppContext.Vehicles[2].LogString);
             //_view.SetLogs(AppContext.Vehicles[3].LogString);
